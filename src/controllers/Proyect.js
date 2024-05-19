@@ -5,7 +5,7 @@ import { successResponseWithData } from "../helpers/http/responses.js";
 
 export const CreateProyect = async(req,res,next)=>{
     // obtener body 
-    const {title,sub_title,repository_url,demo_url,description,tecnologies,learning_gained,difficulties} = req.body
+    const {title,sub_title,repository_url,demo_url,description,tecnologies,learning_gained,difficulties,end_date} = req.body
     // Obtener las imagenes
     const imagesBuffer = req.files;
 
@@ -23,6 +23,7 @@ export const CreateProyect = async(req,res,next)=>{
             tecnologies,
             learning_gained,
             difficulties,
+            end_date
         }
 
         // subirlo al mongo

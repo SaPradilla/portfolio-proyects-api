@@ -23,7 +23,6 @@ export const uploadImages = async(images) => {
       // cargarlo en un arreglo de imagenes 
       imagesObject.push({img,thumbnail})
     }
-    console.log(imagesObject);
     return imagesObject;
     
   } catch (error) {

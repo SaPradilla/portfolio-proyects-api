@@ -8,6 +8,9 @@ const proyectSchema = new Schema({
     sub_title:{
         type:String,
     },
+    end_date:{
+        type:Date,
+    },
     images: [{
         img: {
             type: String,
@@ -15,9 +18,6 @@ const proyectSchema = new Schema({
         thumbnail: {
             type: String,
         },
-        alt: {
-            type: String,
-        }
     }],
     repository_url:{
         type:String,

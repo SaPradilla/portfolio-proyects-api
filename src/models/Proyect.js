@@ -14,9 +14,11 @@ const proyectSchema = new Schema({
     images: [{
         img: {
             type: String,
+            required:true
         },
         thumbnail: {
             type: String,
+            required:true
         },
     }],
     repository_url:{

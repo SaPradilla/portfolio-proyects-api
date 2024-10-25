@@ -12,6 +12,7 @@ export const Create = async(proyectBody)=>{
 
     } catch (error) {
         console.log(`Error al crear un proyecto: ${error}`)
+        throw error;
     }
 
 }
@@ -27,6 +28,7 @@ export const GetAll = async()=>{
 
     } catch (error) {
         console.log(error)
+        throw error;
     }
 
 }
@@ -40,6 +42,7 @@ export const Delete = async(id)=>{
 
     } catch (error) {
         console.log(error)
+        throw error;
     }
 
 }

@@ -1,6 +1,6 @@
 import { validateBody } from "../helpers/validate_body.js";
 import { Create,GetAll,Delete } from "../repository/Proyect.repository.js";
-import { uploadImages } from "../services/uploadImage.js";
+import { uploadImages } from "./uploadImage.service.js";
 
 
 export const createProyect = async (proyectBody, imagesBody) => {

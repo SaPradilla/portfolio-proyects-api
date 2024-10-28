@@ -1,6 +1,6 @@
 
 import { successResponseWithData,ErrorResponse,notFoundResponse } from "../helpers/http/responses.js";
-import {createProyect,getProyects,deleteProyect} from '../services/product.js'
+import {createProyect,getProyects,deleteProyect} from '../services/product.service.js'
 
 export const CreateProyect = async (req, res, next) => {
     // Obtener body 
@@ -36,7 +36,6 @@ export const GetProyects = async(req,res,next)=>{
     }
 
 }
-
 
 export const DeleteProyect = async(req,res,next)=>{
     
